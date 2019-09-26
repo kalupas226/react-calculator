@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PlusBtn = () => {
+const PlusBtn = () => (
     <button>+</button>
-};
+);
 
 export default PlusBtn;
