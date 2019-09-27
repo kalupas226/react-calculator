@@ -5,6 +5,8 @@ import { bindActionCreators } from 'redux';
 import * as actions from '../actions';
 import NumBtn from '../components/NumBtn';
 import PlusBtn from '../components/PlusBtn';
+import MinusBtn from '../components/MinusBtn';
+import ClearBtn from '../components/ClearBtn';
 import Result from '../components/Result';
 
 class CalculatorContainer extends Component {
@@ -30,6 +32,8 @@ class CalculatorContainer extends Component {
                 <div>
                     <NumBtn n={0} onClick={() => actions.onNumClick(0)}/>
                     <PlusBtn onClick={actions.onPlusClick}/>
+                    <MinusBtn onClick={actions.onMinusClick}/>
+                    <ClearBtn onClick={actions.onClearClick}/>
                 </div>
                 <div>
                     <Result result={calculator.showingResult ? calculator.resultValue : calculator.inputValue }/>
